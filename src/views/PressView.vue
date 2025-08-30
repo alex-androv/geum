@@ -1,9 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="app">
-    <RouterView />
-  </div>
+  <div>LOL2</div>
 </template>
 
 <style scoped></style>
