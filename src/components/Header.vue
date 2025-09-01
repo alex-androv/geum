@@ -5,7 +5,9 @@ import LogoIcon from '@/assets/icons/logo.svg'
 <template>
   <div class="bg-[#F0F0F0] px-2 xs:px-3 sm:px-5 lg:px-10 2xl:px-[224px] py-4">
     <div class="flex justify-between items-center mb-5 lg:mb-0">
-      <LogoIcon class="w-[103px] h-[44px] xs:w-[123px] h-[52px] lg:w-[161px] h-[68px]" />
+      <RouterLink to="/"
+        ><LogoIcon class="w-[103px] h-[44px] xs:w-[123px] h-[52px] lg:w-[161px] h-[68px]"
+      /></RouterLink>
       <div class="hidden items-center justify-between gap-2 xs:gap-3 sm:gap-6 lg:flex">
         <RouterLink to="/menu" class="text-xl font-fliege font-medium text-[#2D2A28]"
           >MENU</RouterLink
