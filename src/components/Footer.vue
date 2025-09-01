@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <div class="bg-[#F0F0F0] px-2 xs:px-3 sm:px-5 lg:px-10 2xl:px-[224px] py-4">
+  <div
+    class="bg-[#F0F0F0] px-2 xs:px-3 sm:px-5 lg:px-10 2xl:px-[224px] py-4 border-t border-[#919191]"
+  >
     <div class="flex flex-col sm:flex-row sm:justify-between gap-6 mb-6 items-center">
       <a
         href="https://maps.app.goo.gl/uPy9nPYbt8Vdps8V6?g_st=com.google.maps.preview.copy"
