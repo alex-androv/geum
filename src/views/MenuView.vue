@@ -4,592 +4,611 @@ import DotIcon from '@/assets/icons/dot.svg'
 
 <template>
   <div class="bg-white p-3 xs:py-4 sm:py-5 lg:py-10 2xl:px-[224px]">
-    <div
+    <div class="flex flex-col gap-4 lg:flex-row lg:gap-[60px] 2xl:gap-[120px] mb-10">
+      <!-- <div
       class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:[grid-template-areas:'b1_b2''b4_b3''._b5'] lg:gap-[60px] 2xl:gap-[120px] mb-10"
-    >
-      <!-- Блок 1 -->
-      <div class="lg:[grid-area:b1]">
-        <h2 class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]">
-          menu
-        </h2>
-        <p class="font-rockwell text-right leading-[20px] text-[#2D2A28]">Morning 10:00 — 14:00</p>
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+    > -->
+      <div class="left-block w-full lg:w-1/2">
+        <!-- Блок 1 -->
+        <div class="lg:[grid-area:b1]">
+          <h2
+            class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            Sandwiches
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Bacon sandwich
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Ramiro pepper sandwich with smoked feta
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Chicken sandwich
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
-          >
-            Breakfast
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  French toast with vanilla ice cream
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Pickled vegetables
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Olives
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <p
-              class="font-rockwell italic text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] py-3"
+            menu
+          </h2>
+          <p class="font-rockwell text-right leading-[20px] text-[#2D2A28]">
+            Morning 10:00 — 14:00
+          </p>
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
             >
-              *Extras: egg 100 / bacon 170 / sun-dried tomatoes 100 / smoked feta 140 / eggplant
-              appetizer 130 / olives 120
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Блок 2 -->
-      <div class="lg:[grid-area:b2]">
-        <h2 class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]">
-          menu
-        </h2>
-        <p class="font-rockwell text-right leading-[20px] text-[#2D2A28]">Evening 14:00 — 22:00</p>
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
-          >
-            Sandwiches
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              Sandwiches
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Bacon sandwich
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Bacon sandwich
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Ramiro pepper sandwich with smoked feta
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Ramiro pepper sandwich with smoked feta
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Chicken sandwich
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Chicken sandwich
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
             </div>
           </div>
-        </div>
 
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
-          >
-            Breakfast
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Breakfast
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    French toast with vanilla ice cream
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  French toast with vanilla ice cream
+                  690
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Pickled vegetables
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Olives
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
                 </p>
               </div>
               <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                class="font-rockwell italic text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] py-3 max-w-[90%]"
               >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Pickled vegetables
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Olives
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Блок 3 -->
-      <div class="lg:[grid-area:b3] b">
-        <h2 class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]">
-          drinks
-        </h2>
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
-          >
-            Sandwiches
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Bacon sandwich
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Ramiro pepper sandwich with smoked feta
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                >
-                  Chicken sandwich
-                </p>
-              </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
+                *Extras: egg 100 / bacon 170 / sun-dried tomatoes 100 / smoked feta 140 / eggplant
+                appetizer 130 / olives 120
               </p>
             </div>
           </div>
         </div>
 
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+        <!-- Блок 2 -->
+        <div class="lg:[grid-area:b2]">
+          <h2
+            class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            Breakfast
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+            menu
+          </h2>
+          <p class="font-rockwell text-right leading-[20px] text-[#2D2A28]">
+            Evening 14:00 — 22:00
+          </p>
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Sandwiches
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Bacon sandwich
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  French toast with vanilla ice cream
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Ramiro pepper sandwich with smoked feta
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Chicken sandwich
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
             </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+          </div>
+
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Breakfast
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    French toast with vanilla ice cream
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Pickled vegetables
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Pickled vegetables
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Olives
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Olives
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Блок 4 -->
-      <div class="lg:[grid-area:b4] bg">
-        <h2 class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]">
-          bar
-        </h2>
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+      <div class="right-block w-full lg:w-1/2">
+        <!-- Блок 3 -->
+        <div class="lg:[grid-area:b3] b">
+          <h2
+            class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            Sandwiches
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+            drinks
+          </h2>
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Sandwiches
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Bacon sandwich
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Bacon sandwich
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Ramiro pepper sandwich with smoked feta
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Chicken sandwich
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
             </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+          </div>
+
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Breakfast
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    French toast with vanilla ice cream
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Ramiro pepper sandwich with smoked feta
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Pickled vegetables
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Chicken sandwich
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Olives
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+        <!-- Блок 4 -->
+        <div class="lg:[grid-area:b4] bg">
+          <h2
+            class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            Breakfast
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+            bar
+          </h2>
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Sandwiches
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Bacon sandwich
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  French toast with vanilla ice cream
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Ramiro pepper sandwich with smoked feta
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Chicken sandwich
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
             </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+          </div>
+
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Breakfast
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    French toast with vanilla ice cream
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Pickled vegetables
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Pickled vegetables
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Olives
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Olives
+                  </p>
+                </div>
+                <p
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
+                >
+                  690
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Блок 5 -->
-      <div class="lg:[grid-area:b5] bg">
-        <h2 class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]">
-          wines
-        </h2>
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+        <!-- Блок 5 -->
+        <div class="lg:[grid-area:b5] bg">
+          <h2
+            class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            Sandwiches
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+            wines
+          </h2>
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Sandwiches
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Bacon sandwich
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Bacon sandwich
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Ramiro pepper sandwich with smoked feta
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Ramiro pepper sandwich with smoked feta
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Chicken sandwich
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Chicken sandwich
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
             </div>
           </div>
-        </div>
 
-        <div class="pt-10">
-          <h3
-            class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
-          >
-            Breakfast
-          </h3>
-          <div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+          <div class="pt-10">
+            <h3
+              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+            >
+              Breakfast
+            </h3>
+            <div>
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    French toast with vanilla ice cream
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  French toast with vanilla ice cream
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Pickled vegetables
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Pickled vegetables
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
-            </div>
-            <div class="flex justify-between items-center">
-              <div class="relative">
-                <DotIcon class="absolute top-[7px]" />
+              <div class="flex justify-between items-center">
+                <div class="relative">
+                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
+                  <p
+                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  >
+                    Olives
+                  </p>
+                </div>
                 <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
+                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
-                  Olives
+                  690
                 </p>
               </div>
-              <p
-                class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-              >
-                690
-              </p>
             </div>
           </div>
         </div>
