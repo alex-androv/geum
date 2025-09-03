@@ -1,17 +1,32 @@
-<script setup></script>
+<script setup>
+const photos = [
+  '/src/assets/images/slider/photo.png',
+  '/src/assets/images/slider/photo-1.png',
+  '/src/assets/images/slider/photo-2.png',
+  '/src/assets/images/slider/photo-3.png',
+  '/src/assets/images/slider/photo-4.png',
+]
+</script>
 
 <template>
   <div class="">
-    <!-- <p class="font-fliege font-medium">Fliege Mono 500</p>
-    <p class="font-fliege font-550">Fliege Mono 550</p>
-    <p class="font-fliege font-semibold">Fliege Mono 600</p>
-    <p class="font-fliege font-bold">Fliege Mono 700</p>
-    <p class="font-fliege font-extrabold">Fliege Mono 800</p>
-    <p class="font-rockwell font-normal">Rockwell 400</p>
-    <p class="font-rockwell font-normal italic">Rockwell 400 Italic</p>
-    <p class="font-rockwell font-bold">Rockwell 700</p> -->
-    LOL
+    <div class="block md:hidden overflow-hidden">
+      <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+        <div v-for="(photo, index) in photos" :key="index" class="flex-none w-full snap-start mr-1">
+          <img :src="photo" :alt="`Photo ${index + 1}`" class="w-full h-[334px] object-cover" />
+        </div>
+      </div>
+    </div>
+    <div class=""></div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+</style>
