@@ -10,7 +10,7 @@ import DotIcon from '@/assets/icons/dot.svg'
     > -->
       <div class="left-block w-full lg:w-1/2">
         <!-- Блок 1 -->
-        <div class="lg:[grid-area:b1]">
+        <div class="lg:[grid-area:b1] mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
@@ -137,7 +137,7 @@ import DotIcon from '@/assets/icons/dot.svg'
         </div>
 
         <!-- Блок 2 -->
-        <div class="lg:[grid-area:b2]">
+        <div class="lg:[grid-area:b2] mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
@@ -260,18 +260,21 @@ import DotIcon from '@/assets/icons/dot.svg'
 
       <div class="right-block w-full lg:w-1/2">
         <!-- Блок 3 -->
-        <div class="lg:[grid-area:b3] b">
+        <div class="lg:[grid-area:b3] b mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
             drinks
           </h2>
           <div class="pt-10">
-            <h3
-              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
-            >
-              Sandwiches
-            </h3>
+            <div class="flex justify-between items-center">
+              <h3
+                class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+              >
+                lemonades
+              </h3>
+              <p class="font-rockwell text-[#2D2A28] leading-[20px]">400ml</p>
+            </div>
             <div>
               <div class="flex justify-between items-center">
                 <div class="relative">
@@ -279,7 +282,7 @@ import DotIcon from '@/assets/icons/dot.svg'
                   <p
                     class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
                   >
-                    Bacon sandwich
+                    Mint+Lemon
                   </p>
                 </div>
                 <p
@@ -294,7 +297,7 @@ import DotIcon from '@/assets/icons/dot.svg'
                   <p
                     class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
                   >
-                    Ramiro pepper sandwich with smoked feta
+                    Orange+Cucumber
                   </p>
                 </div>
                 <p
@@ -309,7 +312,7 @@ import DotIcon from '@/assets/icons/dot.svg'
                   <p
                     class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
                   >
-                    Chicken sandwich
+                    Salted Grapefruit
                   </p>
                 </div>
                 <p
@@ -322,11 +325,14 @@ import DotIcon from '@/assets/icons/dot.svg'
           </div>
 
           <div class="pt-10">
-            <h3
-              class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
-            >
-              Breakfast
-            </h3>
+            <div class="flex justify-between items-center">
+              <h3
+                class="font-rockwell font-bold text-[28px] leading-[32px] text-[#2D2A28] uppercase mb-2"
+              >
+                KOMBUCHA
+              </h3>
+              <p class="font-rockwell text-[#2D2A28] leading-[20px]">220ml</p>
+            </div>
             <div>
               <div class="flex justify-between items-center">
                 <div class="relative">
@@ -334,37 +340,7 @@ import DotIcon from '@/assets/icons/dot.svg'
                   <p
                     class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
                   >
-                    French toast with vanilla ice cream
-                  </p>
-                </div>
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-                >
-                  690
-                </p>
-              </div>
-              <div class="flex justify-between items-center">
-                <div class="relative">
-                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
-                  <p
-                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                  >
-                    Pickled vegetables
-                  </p>
-                </div>
-                <p
-                  class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
-                >
-                  690
-                </p>
-              </div>
-              <div class="flex justify-between items-center">
-                <div class="relative">
-                  <DotIcon class="absolute top-[7px] md:top-[10px]" />
-                  <p
-                    class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] max-w-[233px] pl-2"
-                  >
-                    Olives
+                    Kombucha
                   </p>
                 </div>
                 <p
@@ -378,7 +354,7 @@ import DotIcon from '@/assets/icons/dot.svg'
         </div>
 
         <!-- Блок 4 -->
-        <div class="lg:[grid-area:b4] bg">
+        <div class="lg:[grid-area:b4] bg mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
@@ -496,7 +472,7 @@ import DotIcon from '@/assets/icons/dot.svg'
         </div>
 
         <!-- Блок 5 -->
-        <div class="lg:[grid-area:b5] bg">
+        <div class="lg:[grid-area:b5] bg mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
