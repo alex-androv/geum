@@ -8,7 +8,7 @@ import ArrowIcon from '@/assets/icons/arrow-right-up.svg'
     <div class="flex flex-col items-center">
       <QuotesIcon class="mb-5 w-[33px] h-6 sm:w-[50px] sm:h-[38px]" />
       <h1
-        class="text-[28px] xs:text-[36px] sm:text-[52px] uppercase font-fliege font-extrabold text-[#FF4F0A] mb-10"
+        class="text-[28px] xs:text-[36px] sm:text-[52px] leading-[32px] xs:leading-[40px] sm:leading-[56px] tracking-[-8%] uppercase font-fliege font-extrabold text-[#FF4F0A] mb-10"
       >
         press about us
       </h1>
