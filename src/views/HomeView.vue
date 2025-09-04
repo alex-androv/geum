@@ -36,9 +36,24 @@ const photos = [
         </div>
       </div>
     </div>
-    <div class="lg:flex lg:items-center lg:mb-10">
+    <div class="hidden sm:grid grid-cols-4 grid-rows-2 gap-1 mb-5">
+      <div class="col-span-1 row-span-2">
+        <img src="/src/assets/images/desktop/photo.png" />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img src="/src/assets/images/desktop/photo-1.png" />
+      </div>
+      <div class="col-span-2 row-span-1"><img src="/src/assets/images/desktop/photo-2.png" /></div>
+      <div class="col-span-1 row-span-1">
+        <img src="/src/assets/images/desktop/photo-3.png" />
+      </div>
+      <div class="col-span-1 row-span-1">
+        <img src="/src/assets/images/desktop/photo-4.png" />
+      </div>
+    </div>
+    <div class="lg:flex lg:items-center lg:gap-6 lg:mb-10 lg:justify-between lg:w-full">
       <div
-        class="flex justify-between lg:grid lg:grid-cols-2 lg:gap-x-10 lg:gap-y-6 px-11 py-3 mb-5 lg:mb-0 lg:min-w-[276px]"
+        class="flex justify-between lg:grid lg:grid-cols-2 lg:gap-x-10 lg:ml-0 lg:gap-y-6 px-11 lg:px-0 py-3 mb-5 lg:mb-0 lg:min-w-[276px] xs:max-w-[340px] xs:mx-auto sm:max-w-[600px]"
       >
         <a
           href="https://www.instagram.com/geum.bistro/"
@@ -93,12 +108,21 @@ const photos = [
         </a>
       </div>
       <p
-        class="mb-20 lg:mb-0 text-center text-[#2D2A28] font-fliege font-semibold sm:text-[20px leading-[20px] sm:leading-[24px] lg:text-left"
+        class="lg:hidden mb-20 lg:mb-0 text-center text-[#2D2A28] font-fliege font-semibold sm:text-[20px leading-[20px] sm:leading-[24px] lg:text-left lg:line-clamp-5 lg:leading-6"
       >
         We are a neobistro located near the Botanical Garden in Belgrade. Led by chef Ivan
         Ankudinov, we focus on cooking with seasonal ingredients and frequently refresh our menu. We
         collaborate with local wineries, craft beer brewers, and coffee roasters. We believe that
         cooking tasty everyday meals is fun.
+      </p>
+      <p
+        class="hidden lg:block mb-20 lg:mb-0 text-center text-[#2D2A28] font-fliege font-semibold sm:text-[20px leading-[20px] sm:leading-[24px] lg:text-left lg:line-clamp-5 lg:leading-6"
+      >
+        We are a neobistro located near the Botanical Garden in Belgrade. <br />Led by chef Ivan
+        Ankudinov, we focus on cooking with seasonal ingredients and frequently refresh our menu.
+        <br />
+        We collaborate with local wineries, craft beer brewers, and coffee roasters. <br />
+        We believe that cooking tasty everyday meals is fun.
       </p>
     </div>
   </div>
