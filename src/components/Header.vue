@@ -35,12 +35,12 @@ const changeLocale = (newLocale) => {
           {{ t('nav.press') }}
         </RouterLink>
       </div>
-      <div class="flex gap-2">
+      <div class="flex gap-4">
         <button
           @click="changeLocale('sr')"
           :class="[
-            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors',
-            locale === 'sr' ? 'text-[#2D2A28]' : 'text-[#919191]',
+            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors ellipse-small',
+            locale === 'sr' ? 'text-[#2D2A28] active' : 'text-[#919191]',
           ]"
         >
           SR
@@ -48,8 +48,8 @@ const changeLocale = (newLocale) => {
         <button
           @click="changeLocale('en')"
           :class="[
-            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors',
-            locale === 'en' ? 'text-[#2D2A28]' : 'text-[#919191]',
+            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors ellipse-small',
+            locale === 'en' ? 'text-[#2D2A28] active' : 'text-[#919191]',
           ]"
         >
           EN
@@ -103,6 +103,40 @@ const changeLocale = (newLocale) => {
 }
 
 .ellipse-hover:hover {
+  color: #ff4f0a;
+}
+
+.ellipse-small {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ellipse-small::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 24px);
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 309.7px / 177.5px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.ellipse-small:hover::before {
+  border-color: #1509c2;
+  transform: translate(-50%, -50%) rotate(-12.91deg);
+  opacity: 1;
+}
+.ellipse-small.active::before {
+  border-color: #ff4f0a;
+  transform: translate(-50%, -50%) rotate(-12.91deg);
+  opacity: 1;
+}
+
+.ellipse-small:hover {
   color: #ff4f0a;
 }
 </style>
