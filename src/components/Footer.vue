@@ -62,10 +62,13 @@ const isNotHomePage = computed(() => route.name !== 'home')
         <a
           href="https://maps.app.goo.gl/uPy9nPYbt8Vdps8V6?g_st=com.google.maps.preview.copy"
           target="_blank"
-          class="font-fliege font-medium text-[#2D2A28] text-center text-[20px]"
-          >Takovska 45a, Beograd 11060, Serbia</a
+          class="font-fliege font-medium text-[#2D2A28] text-center text-[20px] ellipse-hover"
         >
-        <a href="tel:+381611128101" class="font-fliege font-medium text-[#2D2A28] text-[20px]"
+          Takovska 45a, Beograd 11060, Serbia
+        </a>
+        <a
+          href="tel:+381611128101"
+          class="font-fliege font-medium text-[#2D2A28] text-[20px] ellipse-hover"
           >+381611128101</a
         >
       </div>
@@ -76,4 +79,33 @@ const isNotHomePage = computed(() => route.name !== 'home')
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.ellipse-hover {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ellipse-hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 24px);
+  height: calc(100% + 16px);
+  border: 1px solid transparent;
+  border-radius: 209.7px / 77.5px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.ellipse-hover:hover::before {
+  border-color: #1509c2;
+  transform: translate(-50%, -50%) rotate(-2.91deg);
+  opacity: 1;
+}
+
+.ellipse-hover:hover {
+  color: #ff4f0a;
+}
+</style>
