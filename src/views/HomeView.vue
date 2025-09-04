@@ -164,13 +164,13 @@ const photos = [
   opacity: 0;
 }
 
-.ellipse-hover:hover::before {
+.group:hover .ellipse-hover::before {
   border-color: #1509c2;
   transform: translate(-50%, -50%) rotate(-2.91deg);
   opacity: 1;
 }
 
-.ellipse-hover:hover {
+.group:hover .ellipse-hover {
   color: #ff4f0a;
 }
 </style>
