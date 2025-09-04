@@ -4,6 +4,9 @@ import InstagramIcon from '@/assets/icons/instagram-bold.svg'
 import WhatsappIcon from '@/assets/icons/whatsapp-bold.svg'
 import WoltIcon from '@/assets/icons/wolt-bold.svg'
 import GoogleIcon from '@/assets/icons/google-bold.svg'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 const photos = [
   '/src/assets/images/slider/photo.png',
   '/src/assets/images/slider/photo-1.png',
@@ -21,13 +24,13 @@ const photos = [
         href="https://maps.app.goo.gl/uPy9nPYbt8Vdps8V6?g_st=com.google.maps.preview.copy"
         target="_blank"
         class="font-fliege font-semibold xs:font-medium leading-[18px] xs:leading-[20px] text-[#2D2A28] text-[14px] xs:text-[16px] ml-3"
-        >Takovska 45a, Beograd 11060, Serbia</a
+        >{{ t('address.address') }}</a
       >
     </div>
     <h1
       class="text-[28px] xs:text-[36px] sm:text-[52px] leading-[32px] xs:leading-[40px] sm:leading-[56px] tracking-[-8%] uppercase font-fliege font-extrabold text-[#FF4F0A] mb-5"
     >
-      seasonal restaurant and bar in belgrade
+      {{ t('heading.restaurant') }}
     </h1>
     <div class="block sm:hidden overflow-hidden mb-5">
       <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
@@ -118,19 +121,15 @@ const photos = [
       <p
         class="lg:hidden mb-20 lg:mb-0 text-center text-[#2D2A28] font-fliege font-semibold sm:text-[20px leading-[20px] sm:leading-[24px] lg:text-left lg:line-clamp-5 lg:leading-6"
       >
-        We are a neobistro located near the Botanical Garden in Belgrade. Led by chef Ivan
-        Ankudinov, we focus on cooking with seasonal ingredients and frequently refresh our menu. We
-        collaborate with local wineries, craft beer brewers, and coffee roasters. We believe that
-        cooking tasty everyday meals is fun.
+        {{ t('main.message') }}
       </p>
       <p
         class="hidden lg:block mb-20 lg:mb-0 text-center text-[#2D2A28] font-fliege font-semibold sm:text-[20px leading-[20px] sm:leading-[24px] lg:text-left lg:line-clamp-5 lg:leading-6"
       >
-        We are a neobistro located near the Botanical Garden in Belgrade. <br />Led by chef Ivan
-        Ankudinov, we focus on cooking with seasonal ingredients and frequently refresh our menu.
+        {{ t('main.line_1') }} <br />{{ t('main.line_2') }}
         <br />
-        We collaborate with local wineries, craft beer brewers, and coffee roasters. <br />
-        We believe that cooking tasty everyday meals is fun.
+        {{ t('main.line_3') }} <br />
+        {{ t('main.line_4') }}
       </p>
     </div>
   </div>

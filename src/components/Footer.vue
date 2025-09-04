@@ -6,6 +6,10 @@ import WhatsappIcon from '@/assets/icons/whatsapp-bold.svg'
 import WoltIcon from '@/assets/icons/wolt-bold.svg'
 import GoogleIcon from '@/assets/icons/google-bold.svg'
 
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 const route = useRoute()
 
 const isNotHomePage = computed(() => route.name !== 'home')
@@ -84,7 +88,7 @@ const isNotHomePage = computed(() => route.name !== 'home')
           target="_blank"
           class="font-fliege font-medium text-[#2D2A28] text-center text-[20px] ellipse-hover"
         >
-          Takovska 45a, Beograd 11060, Serbia
+          {{ t('address.address') }}
         </a>
         <a
           href="tel:+381611128101"
@@ -93,7 +97,7 @@ const isNotHomePage = computed(() => route.name !== 'home')
         >
       </div>
       <p class="font-fliege font-medium text-[#615F5C] text-center sm:text-left">
-        © 2025 All rights reserved
+        {{ t('copyright.rights') }}
       </p>
     </div>
   </div>
