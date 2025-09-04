@@ -1,5 +1,12 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import LogoIcon from '@/assets/icons/logo.svg'
+
+const { t, locale } = useI18n()
+
+const changeLocale = (newLocale) => {
+  locale.value = newLocale
+}
 </script>
 
 <template>
@@ -9,41 +16,62 @@ import LogoIcon from '@/assets/icons/logo.svg'
         ><LogoIcon class="w-[103px] h-[44px] xs:w-[123px] h-[52px] lg:w-[161px] h-[68px]"
       /></RouterLink>
       <div class="hidden items-center justify-between gap-2 xs:gap-3 sm:gap-6 lg:flex">
-        <RouterLink to="/menu" class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover"
-          >MENU</RouterLink
-        >
+        <RouterLink to="/menu" class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover">
+          {{ t('nav.menu') }}
+        </RouterLink>
         <div class="w-[84px] h-px bg-[#2D2A28]"></div>
         <a
           href="https://wa.me/381611128101"
           target="_blank"
           class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover"
-          >RESERVATIONS</a
         >
+          {{ t('nav.reservations') }}
+        </a>
         <div class="w-[84px] h-px bg-[#2D2A28]"></div>
-        <RouterLink to="/press" class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover"
-          >PRESS</RouterLink
+        <RouterLink
+          to="/press"
+          class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover"
         >
+          {{ t('nav.press') }}
+        </RouterLink>
       </div>
       <div class="flex gap-2">
-        <div class="text-[#919191] font-fliege font-550 text-2xl leading-7">SR</div>
-        <div class="text-[#2D2A28] font-fliege font-550 text-2xl leading-7">EN</div>
+        <button
+          @click="changeLocale('sr')"
+          :class="[
+            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors',
+            locale === 'sr' ? 'text-[#2D2A28]' : 'text-[#919191]',
+          ]"
+        >
+          SR
+        </button>
+        <button
+          @click="changeLocale('en')"
+          :class="[
+            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors',
+            locale === 'en' ? 'text-[#2D2A28]' : 'text-[#919191]',
+          ]"
+        >
+          EN
+        </button>
       </div>
     </div>
     <div class="flex items-center justify-between gap-2 xs:gap-3 sm:gap-6 lg:hidden">
-      <RouterLink to="/menu" class="text-xl font-fliege font-medium text-[#2D2A28]"
-        >MENU</RouterLink
-      >
+      <RouterLink to="/menu" class="text-xl font-fliege font-medium text-[#2D2A28]">
+        {{ t('nav.menu') }}
+      </RouterLink>
       <div class="w-full h-px bg-[#2D2A28]"></div>
       <a
         href="https://wa.me/381611128101"
         target="_blank"
         class="text-xl font-fliege font-medium text-[#2D2A28]"
-        >RESERVATIONS</a
       >
+        {{ t('nav.reservations') }}
+      </a>
       <div class="w-full h-px bg-[#2D2A28]"></div>
-      <RouterLink to="/press" class="text-xl font-fliege font-medium text-[#2D2A28]"
-        >PRESS</RouterLink
-      >
+      <RouterLink to="/press" class="text-xl font-fliege font-medium text-[#2D2A28]">
+        {{ t('nav.press') }}
+      </RouterLink>
     </div>
   </div>
 </template>
