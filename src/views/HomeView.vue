@@ -58,11 +58,13 @@ const photos = [
         <a
           href="https://www.instagram.com/geum.bistro/"
           target="_blank"
-          class="flex flex-col items-center gap-1"
+          class="group flex flex-col items-center gap-1"
         >
-          <InstagramIcon />
+          <InstagramIcon
+            class="w-6 h-6 text-[#2D2A28] group-hover:text-[#FF4F0A] transition-colors duration-300"
+          />
           <p
-            class="hidden sm:block font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28]"
+            class="hidden sm:block font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28] ellipse-hover"
           >
             instagram
           </p>
@@ -71,11 +73,13 @@ const photos = [
         <a
           href="https://wa.me/381611128101"
           target="_blank"
-          class="flex flex-col items-center gap-1"
+          class="group flex flex-col items-center gap-1"
         >
-          <WhatsappIcon />
+          <WhatsappIcon
+            class="w-6 h-6 text-[#2D2A28] group-hover:text-[#FF4F0A] transition-colors duration-300"
+          />
           <p
-            class="hidden sm:block font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28]"
+            class="hidden sm:block font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28] ellipse-hover"
           >
             whatsapp
           </p>
@@ -84,11 +88,13 @@ const photos = [
         <a
           href="https://maps.app.goo.gl/uPy9nPYbt8Vdps8V6?g_st=com.google.maps.preview.copy"
           target="_blank"
-          class="flex flex-col items-center gap-1"
+          class="group flex flex-col items-center gap-1"
         >
-          <GoogleIcon />
+          <GoogleIcon
+            class="w-6 h-6 text-[#2D2A28] group-hover:text-[#FF4F0A] transition-colors duration-300"
+          />
           <p
-            class="hidden sm:block font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28]"
+            class="hidden sm:block font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28] ellipse-hover"
           >
             google
           </p>
@@ -97,11 +103,13 @@ const photos = [
         <a
           href="https://wolt.com/sr/srb/belgrade/restaurant/geum-bistro"
           target="_blank"
-          class="flex flex-col items-center gap-1"
+          class="group flex flex-col items-center gap-1"
         >
-          <WoltIcon />
+          <WoltIcon
+            class="w-6 h-6 text-[#2D2A28] group-hover:text-[#FF4F0A] transition-colors duration-300"
+          />
           <p
-            class="hidden sm:block font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28]"
+            class="hidden sm:block font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28] ellipse-hover"
           >
             wolt
           </p>
@@ -135,5 +143,34 @@ const photos = [
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+.ellipse-hover {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ellipse-hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 74px);
+  height: calc(100% + 6px);
+  border: 1px solid transparent;
+  border-radius: 209.7px / 77.5px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.ellipse-hover:hover::before {
+  border-color: #1509c2;
+  transform: translate(-50%, -50%) rotate(-2.91deg);
+  opacity: 1;
+}
+
+.ellipse-hover:hover {
+  color: #ff4f0a;
 }
 </style>
