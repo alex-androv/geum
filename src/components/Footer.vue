@@ -17,17 +17,29 @@ const isNotHomePage = computed(() => route.name !== 'home')
       <a
         href="https://www.instagram.com/geum.bistro/"
         target="_blank"
-        class="flex flex-col items-center gap-1"
+        class="group flex flex-col items-center gap-1"
       >
-        <InstagramIcon />
-        <p class="font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28]">instagram</p>
+        <InstagramIcon
+          class="w-6 h-6 text-[#2D2A28] group-hover:text-[#FF4F0A] transition-colors duration-300"
+        />
+        <p class="font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28] ellipse">
+          instagram
+        </p>
       </a>
 
       <div class="hidden xs:block"></div>
 
-      <a href="https://wa.me/381611128101" target="_blank" class="flex flex-col items-center gap-1">
-        <WhatsappIcon />
-        <p class="font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28]">whatsapp</p>
+      <a
+        href="https://wa.me/381611128101"
+        target="_blank"
+        class="group flex flex-col items-center gap-1"
+      >
+        <WhatsappIcon
+          class="w-6 h-6 text-[#2D2A28] group-hover:text-[#FF4F0A] transition-colors duration-300"
+        />
+        <p class="font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28] ellipse">
+          whatsapp
+        </p>
       </a>
 
       <div class="hidden xs:block"></div>
@@ -37,10 +49,14 @@ const isNotHomePage = computed(() => route.name !== 'home')
       <a
         href="https://maps.app.goo.gl/uPy9nPYbt8Vdps8V6?g_st=com.google.maps.preview.copy"
         target="_blank"
-        class="flex flex-col items-center gap-1 ml-8 xs:ml-0"
+        class="group flex flex-col items-center gap-1 ml-8 xs:ml-0"
       >
-        <GoogleIcon />
-        <p class="font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28]">google</p>
+        <GoogleIcon
+          class="w-6 h-6 text-[#2D2A28] group-hover:text-[#FF4F0A] transition-colors duration-300"
+        />
+        <p class="font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28] ellipse">
+          google
+        </p>
       </a>
 
       <div class="hidden xs:block"></div>
@@ -48,10 +64,14 @@ const isNotHomePage = computed(() => route.name !== 'home')
       <a
         href="https://wolt.com/sr/srb/belgrade/restaurant/geum-bistro"
         target="_blank"
-        class="flex flex-col items-center gap-1 ml-8 xs:ml-0"
+        class="group flex flex-col items-center gap-1 ml-8 xs:ml-0"
       >
-        <WoltIcon />
-        <p class="font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28]">wolt</p>
+        <WoltIcon
+          class="w-6 h-6 text-[#2D2A28] group-hover:text-[#FF4F0A] transition-colors duration-300"
+        />
+        <p class="font-fliege font-medium text-[20px] leading-[24px] text-[#2D2A28] ellipse">
+          wolt
+        </p>
       </a>
     </div>
   </div>
@@ -106,6 +126,35 @@ const isNotHomePage = computed(() => route.name !== 'home')
 }
 
 .ellipse-hover:hover {
+  color: #ff4f0a;
+}
+
+.ellipse {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ellipse::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 74px);
+  height: calc(100% + 6px);
+  border: 1px solid transparent;
+  border-radius: 209.7px / 77.5px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.group:hover .ellipse::before {
+  border-color: #1509c2;
+  transform: translate(-50%, -50%) rotate(-2.91deg);
+  opacity: 1;
+}
+
+.group:hover .ellipse {
   color: #ff4f0a;
 }
 </style>
