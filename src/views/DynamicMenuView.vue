@@ -202,6 +202,11 @@ const getSubcategoryName = (subcategory) => {
               </div>
             </div>
           </div>
+          <p
+            class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] mt-3"
+          >
+            Let us know, if you have any food allergies
+          </p>
         </div>
 
         <!-- Menu Evening -->
@@ -243,6 +248,11 @@ const getSubcategoryName = (subcategory) => {
               </div>
             </div>
           </div>
+          <p
+            class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] mt-3"
+          >
+            Let us know, if you have any food allergies
+          </p>
         </div>
       </div>
 
