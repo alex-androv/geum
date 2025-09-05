@@ -1,4 +1,4 @@
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { sanityClient } from '@/lib/sanity'
 
 export function useMenu() {
@@ -48,8 +48,6 @@ export function useMenu() {
         item.subsubcategory === subsubcategory,
     )
   }
-
-  onMounted(fetchMenuItems)
 
   return {
     menuItems,

@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useMenu } from '@/composables/useMenu'
 import DotIcon from '@/assets/icons/dot.svg'
@@ -9,10 +9,16 @@ const {
   menuItems,
   loading,
   error,
+  fetchMenuItems,
   getItemsByCategory,
   getItemsBySubcategory,
   getItemsBySubSubcategory,
 } = useMenu()
+
+// Загружаем данные при монтировании компонента
+onMounted(() => {
+  fetchMenuItems()
+})
 
 // Получение данных по категориям
 const menuMorning = computed(() => getItemsByCategory('menu_morning'))
