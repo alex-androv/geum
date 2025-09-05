@@ -35,8 +35,11 @@ export default {
       type: 'string',
       options: {
         list: [
-          {title: 'Desserts', value: 'desserts'},
-          {title: 'Drinks', value: 'drinks'},
+          {title: 'menu_morning', value: 'menu_morning'},
+          {title: 'menu_evening', value: 'menu_evening'},
+          {title: 'bar', value: 'bar'},
+          {title: 'drinks', value: 'drinks'},
+          {title: 'wines', value: 'wines'},
         ],
       },
       validation: (Rule) => Rule.required(),
@@ -47,17 +50,46 @@ export default {
       type: 'string',
       options: {
         list: [
-          // Drinks subcategories
+          // Menu morning categories
+          {title: 'sandwiches', value: 'sandwiches'},
+          {title: 'breakfast', value: 'breakfast'},
+          {title: 'bread', value: 'bread'},
+          {title: 'buns', value: 'buns'},
+          {title: 'desserts_morning', value: 'desserts_morning'},
+          // Menu evening categories
+          {title: 'snacks', value: 'snacks'},
+          {title: 'starters', value: 'starters'},
+          {title: 'salad', value: 'salad'},
+          {title: 'main dishes', value: 'main dishes'},
+          {title: 'desserts_evening', value: 'desserts_evening'},
+          // Bar subcategories
           {title: 'On Tap', value: 'on_tap'},
-          {title: 'Bottle - Beer', value: 'bottle_beer'},
-          {title: 'Bottle - Cider', value: 'bottle_cider'},
+          {title: 'Bottle', value: 'bottle'},
+          // Drinks subcategories
           {title: 'Lemonades', value: 'lemonades'},
           {title: 'Kombucha', value: 'kombucha'},
           {title: 'Cocktails', value: 'cocktails'},
           {title: 'Softs', value: 'softs'},
-          // Desserts subcategories
-          {title: 'Cakes', value: 'cakes'},
-          {title: 'Other', value: 'other'},
+          {title: 'Coffee', value: 'coffee'},
+          {title: 'Tea', value: 'tea'},
+          // Wines subcategories
+          {title: 'sparkling', value: 'sparkling'},
+          {title: 'white', value: 'white'},
+          {title: 'rose', value: 'rose'},
+          {title: 'orange', value: 'orange'},
+        ],
+      },
+    },
+    {
+      name: 'subsubcategory',
+      title: 'Sub-subcategory / Под-поткатегорија',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Beer', value: 'beer'},
+          {title: 'Cider', value: 'cider'},
+          {title: 'Vodka', value: 'vodka'},
+          {title: 'Rakija', value: 'rakija'},
         ],
       },
     },

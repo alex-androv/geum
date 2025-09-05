@@ -16,7 +16,8 @@ export function useMenu() {
         name,
         price,
         category,
-        subcategory
+        subcategory,
+        subsubcategory
       }`
 
       const items = await sanityClient.fetch(query)
@@ -29,7 +30,6 @@ export function useMenu() {
     }
   }
 
-  // Фильтрация по категориям
   const getItemsByCategory = (category) => {
     return menuItems.value.filter((item) => item.category === category)
   }
@@ -37,6 +37,15 @@ export function useMenu() {
   const getItemsBySubcategory = (category, subcategory) => {
     return menuItems.value.filter(
       (item) => item.category === category && item.subcategory === subcategory,
+    )
+  }
+
+  const getItemsBySubSubcategory = (category, subcategory, subsubcategory) => {
+    return menuItems.value.filter(
+      (item) =>
+        item.category === category &&
+        item.subcategory === subcategory &&
+        item.subsubcategory === subsubcategory,
     )
   }
 
@@ -49,5 +58,6 @@ export function useMenu() {
     fetchMenuItems,
     getItemsByCategory,
     getItemsBySubcategory,
+    getItemsBySubSubcategory,
   }
 }
