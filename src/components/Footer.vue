@@ -86,7 +86,7 @@ const isNotHomePage = computed(() => route.name !== 'home')
         <a
           href="https://maps.app.goo.gl/uPy9nPYbt8Vdps8V6?g_st=com.google.maps.preview.copy"
           target="_blank"
-          class="font-fliege font-medium text-[#2D2A28] text-center text-[20px] ellipse-hover"
+          class="font-fliege font-medium text-[#2D2A28] text-center text-[20px] ellipse-hover ellipse-hover--address"
         >
           {{ t('address.address') }}
         </a>
@@ -146,7 +146,7 @@ const isNotHomePage = computed(() => route.name !== 'home')
   width: calc(100% + 74px);
   height: calc(100% + 6px);
   border: 1px solid transparent;
-  border-radius: 209.7px / 77.5px;
+  border-radius: 309.7px / 77.5px;
   transform: translate(-50%, -50%) rotate(0deg);
   transition: all 0.3s ease;
   opacity: 0;
@@ -160,5 +160,11 @@ const isNotHomePage = computed(() => route.name !== 'home')
 
 .group:hover .ellipse {
   color: #ff4f0a;
+}
+
+.ellipse-hover--address::before {
+  width: calc(100% + 74px);
+  height: calc(100% + 26px);
+  border-radius: 509.7px / 77.5px;
 }
 </style>

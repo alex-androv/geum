@@ -45,7 +45,10 @@ onMounted(() => {
         ><LogoIcon class="w-[103px] h-[44px] xs:w-[123px] h-[52px] lg:w-[161px] h-[68px]"
       /></RouterLink>
       <div class="hidden items-center justify-between gap-2 xs:gap-3 sm:gap-6 lg:flex">
-        <RouterLink to="/menu" class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover">
+        <RouterLink
+          to="/menu"
+          class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover ellipse-hover-thin"
+        >
           {{ t('nav.menu') }}
         </RouterLink>
         <div class="w-[84px] h-px bg-[#2D2A28]"></div>
@@ -59,7 +62,7 @@ onMounted(() => {
         <div class="w-[84px] h-px bg-[#2D2A28]"></div>
         <RouterLink
           to="/press"
-          class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover"
+          class="text-xl font-fliege font-medium text-[#2D2A28] ellipse-hover ellipse-hover-thin"
         >
           {{ t('nav.press') }}
         </RouterLink>
@@ -68,7 +71,7 @@ onMounted(() => {
         <button
           @click="changeLocale('sr')"
           :class="[
-            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors ellipse-small',
+            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors ellipse-lang',
             locale === 'sr' ? 'text-[#2D2A28] active' : 'text-[#919191]',
           ]"
         >
@@ -77,7 +80,7 @@ onMounted(() => {
         <button
           @click="changeLocale('en')"
           :class="[
-            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors ellipse-small',
+            'font-fliege font-550 text-2xl leading-7 cursor-pointer transition-colors ellipse-lang',
             locale === 'en' ? 'text-[#2D2A28] active' : 'text-[#919191]',
           ]"
         >
@@ -116,10 +119,10 @@ onMounted(() => {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: calc(100% + 74px);
+  width: calc(100% + 44px);
   height: calc(100% + 6px);
   border: 1px solid transparent;
-  border-radius: 209.7px / 77.5px;
+  border-radius: 309.7px / 77.5px;
   transform: translate(-50%, -50%) rotate(0deg);
   transition: all 0.3s ease;
   opacity: 0;
@@ -127,7 +130,7 @@ onMounted(() => {
 
 .ellipse-hover:hover::before {
   border-color: #1509c2;
-  transform: translate(-50%, -50%) rotate(-2.91deg);
+  transform: translate(-50%, -50%) rotate(-5.91deg);
   opacity: 1;
 }
 
@@ -135,12 +138,12 @@ onMounted(() => {
   color: #ff4f0a;
 }
 
-.ellipse-small {
+.ellipse-lang {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.ellipse-small::before {
+.ellipse-lang::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -154,18 +157,23 @@ onMounted(() => {
   opacity: 0;
 }
 
-.ellipse-small:hover::before {
+.ellipse-lang:hover::before {
   border-color: #1509c2;
   transform: translate(-50%, -50%) rotate(-12.91deg);
   opacity: 1;
 }
-.ellipse-small.active::before {
+.ellipse-lang.active::before {
   border-color: #ff4f0a;
   transform: translate(-50%, -50%) rotate(-12.91deg);
   opacity: 1;
 }
 
-.ellipse-small:hover {
+.ellipse-lang:hover {
   color: #ff4f0a;
+}
+
+.ellipse-hover-thin::before {
+  width: calc(100% + 54px);
+  height: 100%;
 }
 </style>

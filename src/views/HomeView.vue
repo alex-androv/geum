@@ -20,12 +20,11 @@ const photos = [
   <div class="bg-[#F0F0F0] px-2 xs:px-3 sm:px-5 lg:px-10 2xl:px-[224px] py-4">
     <div class="flex items-center mb-2">
       <LocationIcon class="w-9 h-9 xs:w-10 xs:h-10" />
-      <a
-        href="https://maps.app.goo.gl/uPy9nPYbt8Vdps8V6?g_st=com.google.maps.preview.copy"
-        target="_blank"
+      <p
         class="font-fliege font-semibold xs:font-medium leading-[18px] xs:leading-[20px] text-[#2D2A28] text-[14px] xs:text-[16px] ml-3"
-        >{{ t('address.address') }}</a
       >
+        {{ t('address.address') }}
+      </p>
     </div>
     <h1
       class="text-[28px] xs:text-[36px] sm:text-[52px] leading-[32px] xs:leading-[40px] sm:leading-[56px] tracking-[-8%] uppercase font-fliege font-extrabold text-[#FF4F0A] mb-5"
@@ -157,7 +156,7 @@ const photos = [
   width: calc(100% + 74px);
   height: calc(100% + 6px);
   border: 1px solid transparent;
-  border-radius: 209.7px / 77.5px;
+  border-radius: 309.7px / 77.5px;
   transform: translate(-50%, -50%) rotate(0deg);
   transition: all 0.3s ease;
   opacity: 0;
