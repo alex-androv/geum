@@ -178,7 +178,7 @@ const getSubcategoryName = (subcategory) => {
             menu
           </h2>
           <p class="font-rockwell text-right leading-[20px] text-[#2D2A28]">
-            Morning 10:00 — 14:00
+            Morning 10:00 - 14:00
           </p>
 
           <div
@@ -208,6 +208,16 @@ const getSubcategoryName = (subcategory) => {
                 </p>
               </div>
             </div>
+
+            <!-- Блок Extras после подкатегории breakfast -->
+            <div v-if="subcategory === 'breakfast'">
+              <p
+                class="font-rockwell italic text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] py-3 max-w-[90%]"
+              >
+                *Extras: egg 100 / bacon 170 / sun-dried tomatoes 100 / smoked feta 140 / eggplant
+                appetizer 130 / olives 120
+              </p>
+            </div>
           </div>
           <p
             class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] mt-3"
@@ -224,7 +234,7 @@ const getSubcategoryName = (subcategory) => {
             menu
           </h2>
           <p class="font-rockwell text-right leading-[20px] text-[#2D2A28]">
-            Evening 14:00 — 22:00
+            Evening 14:00 - 22:00
           </p>
 
           <div
@@ -310,6 +320,13 @@ const getSubcategoryName = (subcategory) => {
                   class="font-rockwell text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px]"
                 >
                   {{ item.price }}
+                </p>
+              </div>
+              <div v-if="subcategory === 'coffee'">
+                <p
+                  class="font-rockwell italic text-[#2D2A28] leading-[20px] md:text-[20px] md:leading-[24px] py-3 max-w-[90%]"
+                >
+                  * milk + 50 din<br>* soy milk + 80 din</br>
                 </p>
               </div>
             </div>
