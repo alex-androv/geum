@@ -422,11 +422,14 @@ const getSubcategoryName = (subcategory) => {
 
             <!-- Vodka -->
             <div v-if="barBySubcategory.bottle.vodka" class="pt-5">
-              <h4
-                class="font-rockwell font-semibold text-[20px] leading-[24px] text-[#2D2A28] mb-1"
-              >
-                {{ getSubcategoryName('vodka') }}
-              </h4>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="font-rockwell font-semibold text-[20px] leading-[24px] text-[#2D2A28] mb-1"
+                >
+                  {{ getSubcategoryName('vodka') }}
+                </h4>
+                <p class="font-rockwell text-[#2D2A28] leading-[20px]">40ml</p>
+              </div>
               <div>
                 <div
                   v-for="item in barBySubcategory.bottle.vodka"
@@ -452,11 +455,14 @@ const getSubcategoryName = (subcategory) => {
 
             <!-- Rakija -->
             <div v-if="barBySubcategory.bottle.rakija" class="pt-5">
-              <h4
-                class="font-rockwell font-semibold text-[20px] leading-[24px] text-[#2D2A28] mb-1"
-              >
-                {{ getSubcategoryName('rakija') }}
-              </h4>
+              <div class="flex justify-between items-center">
+                <h4
+                  class="font-rockwell font-semibold text-[20px] leading-[24px] text-[#2D2A28] mb-1"
+                >
+                  {{ getSubcategoryName('rakija') }}
+                </h4>
+                <p class="font-rockwell text-[#2D2A28] leading-[20px]">40ml</p>
+              </div>
               <div>
                 <div
                   v-for="item in barBySubcategory.bottle.rakija"
