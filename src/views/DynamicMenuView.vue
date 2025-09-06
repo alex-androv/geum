@@ -361,9 +361,7 @@ const getSubcategoryName = (subcategory) => {
 
             <!-- Beer -->
             <div v-if="barBySubcategory.bottle.beer" class="pt-5">
-              <h4
-                class="font-rockwell font-semibold text-[20px] leading-[24px] text-[#2D2A28] mb-1"
-              >
+              <h4 class="font-rockwell font-bold text-[20px] leading-[24px] text-[#2D2A28] mb-2">
                 {{ getSubcategoryName('beer') }}
               </h4>
               <div>
