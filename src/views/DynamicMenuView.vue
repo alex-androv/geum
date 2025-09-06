@@ -171,7 +171,7 @@ const getSubcategoryName = (subcategory) => {
       <!-- Левый блок -->
       <div class="left-block w-full lg:w-1/2">
         <!-- Menu Morning -->
-        <div class="mb-10">
+        <div v-if="menuMorning.length > 0" class="mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
@@ -227,7 +227,7 @@ const getSubcategoryName = (subcategory) => {
         </div>
 
         <!-- Menu Evening -->
-        <div class="mb-10">
+        <div v-if="menuEvening.length > 0" class="mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
@@ -276,7 +276,7 @@ const getSubcategoryName = (subcategory) => {
       <!-- Правый блок -->
       <div class="right-block w-full lg:w-1/2">
         <!-- Drinks -->
-        <div class="mb-10">
+        <div v-if="drinks.length > 0" class="mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
@@ -334,7 +334,7 @@ const getSubcategoryName = (subcategory) => {
         </div>
 
         <!-- Bar -->
-        <div class="mb-10">
+        <div v-if="bar.length > 0" class="mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
@@ -506,7 +506,7 @@ const getSubcategoryName = (subcategory) => {
         </div>
 
         <!-- Wines -->
-        <div class="mb-10">
+        <div v-if="wines.length > 0" class="mb-10">
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
