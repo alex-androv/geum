@@ -32,6 +32,8 @@ export default {
     read: 'ПРОЧИТАЈ',
   },
   menu: {
+    loading: 'Учитавање менија...',
+    error: 'Грешка при учитавању менија:',
     menu_morning: 'мени',
     morning: 'Jутро',
     menu_evening: 'мени',

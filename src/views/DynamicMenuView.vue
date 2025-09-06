@@ -158,12 +158,12 @@ const getSubcategoryName = (subcategory) => {
   <div class="bg-white p-3 xs:py-4 sm:py-5 lg:py-10 2xl:px-[224px]">
     <!-- Loading состояние -->
     <div v-if="loading" class="flex justify-center items-center py-20">
-      <p class="font-rockwell text-[#2D2A28]">Loading menu...</p>
+      <p class="font-rockwell text-[#2D2A28]">{{ t('menu.loading') }}</p>
     </div>
 
     <!-- Ошибка -->
     <div v-else-if="error" class="flex justify-center items-center py-20">
-      <p class="font-rockwell text-red-600">Error loading menu: {{ error }}</p>
+      <p class="font-rockwell text-red-600">{{ t('menu.error') }} {{ error }}</p>
     </div>
 
     <!-- Основной контент -->

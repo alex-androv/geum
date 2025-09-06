@@ -32,6 +32,8 @@ export default {
     read: 'READ',
   },
   menu: {
+    loading: 'Loading menu...',
+    error: 'Error loading menu:',
     menu_morning: 'menu',
     morning: 'Morning',
     menu_evening: 'menu',
