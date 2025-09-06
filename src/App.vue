@@ -6,9 +6,23 @@ import Footer from '@/components/Footer.vue'
 <template>
   <div class="app">
     <Header />
-    <RouterView />
+    <main class="main-content">
+      <RouterView />
+    </main>
     <Footer />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+</style>
