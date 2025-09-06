@@ -96,7 +96,7 @@ const barBySubcategory = computed(() => {
 
 // Группировка wines по подкатегориям
 const winesBySubcategory = computed(() => {
-  const subcategories = ['sparkling', 'white', 'rose', 'orange']
+  const subcategories = ['sparkling', 'white', 'rose', 'red', 'orange']
   return subcategories.reduce((acc, subcategory) => {
     const items = getItemsBySubcategory('wines', subcategory)
     if (items.length > 0) {
@@ -140,6 +140,7 @@ const subcategoryNames = {
   sparkling: { en: 'Sparkling', sr: 'Пенушаво' },
   white: { en: 'White', sr: 'Бело' },
   rose: { en: 'Rosé', sr: 'Розе' },
+  red: { en: 'red', sr: 'црвена' },
   orange: { en: 'Orange', sr: 'Наранџасто' },
 }
 

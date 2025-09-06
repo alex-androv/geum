@@ -76,6 +76,7 @@ export default {
           {title: 'sparkling', value: 'sparkling'},
           {title: 'white', value: 'white'},
           {title: 'rose', value: 'rose'},
+          {title: 'red', value: 'red'},
           {title: 'orange', value: 'orange'},
         ],
       },
