@@ -11,13 +11,14 @@ export function useMenu() {
     error.value = null
 
     try {
-      const query = `*[_type == "menuItem"] | order(category asc, subcategory asc) {
+      const query = `*[_type == "menuItem"] | order(category asc, subcategory asc, order asc) {
         _id,
         name,
         price,
         category,
         subcategory,
-        subsubcategory
+        subsubcategory,
+        order
       }`
 
       const items = await sanityClient.fetch(query)

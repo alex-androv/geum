@@ -93,6 +93,13 @@ export default {
         ],
       },
     },
+    {
+      name: 'order',
+      title: 'Order / Редослед',
+      type: 'number',
+      description: 'Порядок отображения (1, 2, 3...). Меньшие числа отображаются выше.',
+      validation: (Rule) => Rule.min(1).integer(),
+    },
   ],
   preview: {
     select: {
@@ -100,11 +107,12 @@ export default {
       nameSr: 'name.sr',
       price: 'price',
       category: 'category',
+      order: 'order',
     },
-    prepare({nameEn, nameSr, price, category}) {
+    prepare({nameEn, nameSr, price, category, order}) {
       return {
         title: `${nameEn} / ${nameSr}`,
-        subtitle: `${price} RSD - ${category}`,
+        subtitle: `${price} RSD - ${category} (${order || 'no order'})`,
       }
     },
   },
