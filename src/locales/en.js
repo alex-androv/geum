@@ -31,4 +31,13 @@ export default {
     mapamag: '“everything is good here” ',
     read: 'READ',
   },
+  menu: {
+    menu_morning: 'menu',
+    morning: 'Morning',
+    menu_evening: 'menu',
+    evening: 'Evening',
+    drinks: 'drinks',
+    bar: 'bar',
+    wines: 'wines',
+  },
 }

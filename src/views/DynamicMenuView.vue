@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { useMenu } from '@/composables/useMenu'
 import DotIcon from '@/assets/icons/dot.svg'
 
-const { locale } = useI18n()
+const { t, locale } = useI18n()
 const {
   menuItems,
   loading,
@@ -175,10 +175,10 @@ const getSubcategoryName = (subcategory) => {
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            menu
+          {{ t('menu.menu_morning') }}
           </h2>
           <p class="font-rockwell text-right leading-[20px] text-[#2D2A28]">
-            Morning 10:00 - 14:00
+            {{ t('menu.morning') }} 10:00 - 14:00
           </p>
 
           <div
@@ -231,10 +231,10 @@ const getSubcategoryName = (subcategory) => {
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            menu
+          {{ t('menu.menu_evening') }}
           </h2>
           <p class="font-rockwell text-right leading-[20px] text-[#2D2A28]">
-            Evening 14:00 - 22:00
+            {{ t('menu.evening') }} 14:00 - 22:00
           </p>
 
           <div
@@ -280,7 +280,7 @@ const getSubcategoryName = (subcategory) => {
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            drinks
+          {{ t('menu.drinks') }}
           </h2>
 
           <div v-for="(items, subcategory) in drinksBySubcategory" :key="subcategory" class="pt-10">
@@ -338,7 +338,7 @@ const getSubcategoryName = (subcategory) => {
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            bar
+          {{ t('menu.bar') }}
           </h2>
 
           <!-- On Tap -->
@@ -510,7 +510,7 @@ const getSubcategoryName = (subcategory) => {
           <h2
             class="font-fliege font-extrabold text-right text-[64px] leading-[68px] text-[#2D2A28]"
           >
-            wines
+          {{ t('menu.wines') }}
           </h2>
 
           <div v-for="(items, subcategory) in winesBySubcategory" :key="subcategory" class="pt-10">

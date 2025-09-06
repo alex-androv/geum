@@ -31,4 +31,13 @@ export default {
     mapamag: '„Овде је све добро“ ',
     read: 'ПРОЧИТАЈ',
   },
+  menu: {
+    menu_morning: 'мени',
+    morning: 'Jутро',
+    menu_evening: 'мени',
+    evening: 'Вече',
+    drinks: 'пића',
+    bar: 'бар',
+    wines: 'вина',
+  },
 }
