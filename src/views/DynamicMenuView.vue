@@ -292,6 +292,9 @@ const getSubcategoryName = (subcategory) => {
               >
                 220ml
               </p>
+              <p v-if="subcategory === 'tea'" class="font-rockwell text-[#2D2A28] leading-[20px]">
+                750ml
+              </p>
             </div>
             <div>
               <div v-for="item in items" :key="item._id" class="flex justify-between items-center">
