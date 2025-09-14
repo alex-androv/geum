@@ -1,11 +1,9 @@
 <script setup>
-import { onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import LogoIcon from '@/assets/icons/logo.svg'
 
 const { t, locale } = useI18n()
 
-// Функция для сохранения языка в localStorage
 const saveLocaleToStorage = (newLocale) => {
   try {
     localStorage.setItem('preferred-locale', newLocale)
@@ -14,28 +12,10 @@ const saveLocaleToStorage = (newLocale) => {
   }
 }
 
-// Функция для загрузки языка из localStorage
-const loadLocaleFromStorage = () => {
-  try {
-    return localStorage.getItem('preferred-locale')
-  } catch (error) {
-    console.warn('Could not load locale from localStorage:', error)
-    return null
-  }
-}
-
 const changeLocale = (newLocale) => {
   locale.value = newLocale
   saveLocaleToStorage(newLocale)
 }
-
-// Загружаем сохраненный язык при монтировании компонента
-onMounted(() => {
-  const savedLocale = loadLocaleFromStorage()
-  if (savedLocale && (savedLocale === 'en' || savedLocale === 'sr')) {
-    locale.value = savedLocale
-  }
-})
 </script>
 
 <template>
