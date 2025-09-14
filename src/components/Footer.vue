@@ -167,4 +167,10 @@ const isNotHomePage = computed(() => route.name !== 'home')
   height: calc(100% + 26px);
   border-radius: 509.7px / 77.5px;
 }
+
+@media (max-width: 639px) {
+  .ellipse-hover--address::before {
+    display: none;
+  }
+}
 </style>

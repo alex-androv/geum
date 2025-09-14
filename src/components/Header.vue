@@ -47,7 +47,7 @@ const changeLocale = (newLocale) => {
           {{ t('nav.press') }}
         </RouterLink>
       </div>
-      <div class="flex gap-4">
+      <div class="flex gap-4 px-2">
         <button
           @click="changeLocale('sr')"
           :class="[

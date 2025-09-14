@@ -13,6 +13,13 @@ import Footer from '@/components/Footer.vue'
   </div>
 </template>
 
+<style>
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+</style>
+
 <style scoped>
 .app {
   min-height: 100vh;
